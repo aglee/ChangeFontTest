@@ -11,7 +11,7 @@ The archived ["Using the Font Panel"](https://developer.apple.com/library/archiv
 
 ## Notes
 
-Looks like `changeFont:` does in fact get called by default, at least on Mojave.  **NOTE: I haven't tested on Catalina.**
+Looks like `changeFont:` does in fact get called by default, at least on Mojave, and seemingly on Catalina.
 
 Looks like it does work to change `NSFontManager`'s action to something else.  In this case I added an `appSpecificChangeFont:` method to the app delegate, and tweaked `NSFontManager` to use that as its action.  All it does is an NSLog followed by sending `changeFont:` to the first responder.  One could put any other custom behavior in there.
 
