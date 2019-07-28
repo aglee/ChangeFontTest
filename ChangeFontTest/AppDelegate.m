@@ -32,4 +32,10 @@
 	NSLog(@"----END responder chain");
 }
 
+#pragma mark - <NSApplicationDelegate> methods
+
+- (void)applicationDidFinishLaunching:(NSNotification *)notification {
+	[NSFontManager.sharedFontManager orderFrontFontPanel:nil];
+}
+
 @end
