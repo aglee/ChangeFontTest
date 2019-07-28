@@ -9,20 +9,27 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-
 @property (weak) IBOutlet NSWindow *window;
 @end
 
+
+
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	// Insert code here to initialize your application
+#pragma mark - Action methods
+
+- (IBAction)xxxchangeFont:(id)sender {
+	NSLog(@"changeFont: called in %@", self.className);
 }
 
-
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
-	// Insert code here to tear down your application
+- (IBAction)printResponderChain:(id)sender {
+	NSResponder *resp = NSApp.keyWindow.firstResponder;
+	NSLog(@"---- BEGIN responder chain");
+	do {
+		NSLog(@"%@ -- implements changeFont:? %d", resp.className, [resp respondsToSelector:@selector(changeFont:)]);
+		resp = resp.nextResponder;
+	} while (resp);
+	NSLog(@"----END responder chain");
 }
-
 
 @end
