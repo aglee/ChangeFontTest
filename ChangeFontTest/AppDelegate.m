@@ -18,7 +18,7 @@
 
 #pragma mark - Action methods
 
-- (IBAction)xxxchangeFont:(id)sender {
+- (IBAction)changeFont:(id)sender {
 	NSLog(@"changeFont: called in %@", self.className);
 }
 
