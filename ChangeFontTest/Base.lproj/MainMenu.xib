@@ -777,6 +777,10 @@
             </connections>
             <point key="canvasLocation" x="57" y="489"/>
         </window>
-        <customObject id="aOo-AC-wW5" customClass="MainWindowDelegate"/>
+        <customObject id="aOo-AC-wW5" customClass="MainWindowController">
+            <connections>
+                <outlet property="window" destination="QvC-M9-y7g" id="HzP-RW-T8T"/>
+            </connections>
+        </customObject>
     </objects>
 </document>

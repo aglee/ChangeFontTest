@@ -1,5 +1,5 @@
 //
-//  MainWindowDelegate.h
+//  MainWindowController.h
 //  ChangeFontTest
 //
 //  Created by Andy Lee on 7/28/19.
@@ -10,10 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- * Quick and dirty window delegate.  Normally I'd use an NSWindowController.
- */
-@interface MainWindowDelegate : NSObject <NSWindowDelegate>
+@interface MainWindowController : NSWindowController
 
 @end
 

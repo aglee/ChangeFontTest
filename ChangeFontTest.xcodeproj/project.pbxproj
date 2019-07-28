@@ -11,7 +11,7 @@
 		73064C6C22ED5E08000373E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73064C6B22ED5E08000373E9 /* Assets.xcassets */; };
 		73064C6F22ED5E08000373E9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73064C6D22ED5E08000373E9 /* MainMenu.xib */; };
 		73064C7222ED5E08000373E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73064C7122ED5E08000373E9 /* main.m */; };
-		73064C7C22ED65A8000373E9 /* MainWindowDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73064C7B22ED65A8000373E9 /* MainWindowDelegate.m */; };
+		73064C7C22ED65A8000373E9 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73064C7B22ED65A8000373E9 /* MainWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		73064C7122ED5E08000373E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73064C7322ED5E08000373E9 /* ChangeFontTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChangeFontTest.entitlements; sourceTree = "<group>"; };
 		73064C7922ED639F000373E9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		73064C7A22ED65A8000373E9 /* MainWindowDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainWindowDelegate.h; sourceTree = "<group>"; };
-		73064C7B22ED65A8000373E9 /* MainWindowDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainWindowDelegate.m; sourceTree = "<group>"; };
+		73064C7A22ED65A8000373E9 /* MainWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		73064C7B22ED65A8000373E9 /* MainWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			children = (
 				73064C6822ED5E07000373E9 /* AppDelegate.h */,
 				73064C6922ED5E07000373E9 /* AppDelegate.m */,
-				73064C7A22ED65A8000373E9 /* MainWindowDelegate.h */,
-				73064C7B22ED65A8000373E9 /* MainWindowDelegate.m */,
+				73064C7A22ED65A8000373E9 /* MainWindowController.h */,
+				73064C7B22ED65A8000373E9 /* MainWindowController.m */,
 				73064C6B22ED5E08000373E9 /* Assets.xcassets */,
 				73064C6D22ED5E08000373E9 /* MainMenu.xib */,
 				73064C7022ED5E08000373E9 /* Info.plist */,
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73064C7C22ED65A8000373E9 /* MainWindowDelegate.m in Sources */,
+				73064C7C22ED65A8000373E9 /* MainWindowController.m in Sources */,
 				73064C7222ED5E08000373E9 /* main.m in Sources */,
 				73064C6A22ED5E07000373E9 /* AppDelegate.m in Sources */,
 			);
