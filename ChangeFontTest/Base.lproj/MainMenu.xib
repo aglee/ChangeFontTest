@@ -683,6 +683,7 @@
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="49" y="214"/>
         </menu>
         <window title="ChangeFontTest" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
@@ -694,18 +695,18 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljZ-Ui-cO5">
-                        <rect key="frame" x="59" y="149" width="240" height="135"/>
+                        <rect key="frame" x="59" y="102" width="240" height="111"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="eMo-vp-Cev">
-                            <rect key="frame" x="0.0" y="0.0" width="225" height="135"/>
+                            <rect key="frame" x="0.0" y="0.0" width="225" height="111"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textView ambiguous="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" smartInsertDelete="YES" id="ofC-nM-tTr">
-                                    <rect key="frame" x="0.0" y="0.0" width="225" height="135"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="225" height="111"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="minSize" width="225" height="135"/>
+                                    <size key="minSize" width="225" height="111"/>
                                     <size key="maxSize" width="225" height="10000000"/>
                                     <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 </textView>
@@ -716,7 +717,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="hZO-Ge-9tt">
-                            <rect key="frame" x="225" y="0.0" width="15" height="135"/>
+                            <rect key="frame" x="225" y="0.0" width="15" height="111"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>
@@ -738,19 +739,43 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V9R-e0-0A1">
-                        <rect key="frame" x="53" y="59" width="81" height="32"/>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dYT-59-ihT">
+                        <rect key="frame" x="53" y="13" width="284" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aep-Yu-eji">
+                        <buttonCell key="cell" type="push" title="Set This Window's First Responder to nil" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Eay-Jt-fM2">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="clearFirstResponder:" target="Voe-Tx-rLC" id="OYS-bc-KX7"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="whv-Lp-7yJ">
+                        <rect key="frame" x="70" y="233" width="340" height="43"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" selectable="YES" title="Note: you can show/hide the font panel with ⌘T. Note also: this text is selectable though not editable." id="NEe-eX-1fh">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V9R-e0-0A1">
+                        <rect key="frame" x="53" y="46" width="330" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Make This Button the Window's First Responder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aep-Yu-eji">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="makeSenderTheFirstResponder:" target="Voe-Tx-rLC" id="t3J-yJ-tHY"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>
             <connections>
                 <outlet property="delegate" destination="aOo-AC-wW5" id="ayZ-Nz-0Gc"/>
             </connections>
+            <point key="canvasLocation" x="57" y="489"/>
         </window>
         <customObject id="aOo-AC-wW5" customClass="MainWindowDelegate"/>
     </objects>
